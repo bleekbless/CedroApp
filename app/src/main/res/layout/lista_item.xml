@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/checkBox"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:visibility="invisible"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:padding="10px"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_toRightOf="@+id/checkBox"
+        android:layout_toEndOf="@+id/checkBox" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:paddingTop="12dp"
+        android:id="@+id/shortname"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginRight="60dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:src="@drawable/visitado"
+        android:id="@+id/iconVisitado"
+        android:padding="5dp"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/shortname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/remover_um"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/deletarUm"
+         />
+
+    <TextView
+        android:text="25"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:layout_toLeftOf="@id/deletarUm"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textSize="25dp"
+        android:id="@+id/iso" />
+
+
+
+
+</RelativeLayout>

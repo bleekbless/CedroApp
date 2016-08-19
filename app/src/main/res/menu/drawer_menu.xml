@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+            >
+
+        <item android:id="@+id/perfil_id"
+            android:title="Perfil"
+            android:checkable="true"
+            android:icon="@drawable/perfil"
+            ></item>
+        <item android:id="@+id/paises_id"
+            android:checkable="true"
+            android:title="Países"
+            android:icon="@drawable/paises"
+            ></item>
+        <item
+            android:title="Meus Países"
+            android:id="@+id/meus_paises_id"
+            android:checkable="true"
+            android:icon="@drawable/mpaises"
+            ></item>
+       <item
+           android:title="Sair"
+            android:id="@+id/logout_button_id"
+           android:checkable="true"
+            android:icon="@drawable/com_facebook_button_icon"
+
+             />
+    </group>
+
+</menu>

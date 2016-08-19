@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ProvaCedro</string>
+
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">163856900708387</string>
+    <string name="nenhum_visitado">Nenhum país visitado</string>
+    <string name="title_visitados">Países que visitei</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

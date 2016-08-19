@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detalhes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.paulo.provacedro.DetalhesActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        layout="@layout/toolbar_layout"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/edit_imagem_pais"
+        android:layout_below="@id/toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edit_imagem_pais"
+        android:gravity="center"
+        android:layout_marginTop="75dp"
+        android:textSize="35dp"
+        android:id="@+id/edit_shortname_pais"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/edit_imagem_pais"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:id="@+id/edit_longname_pais"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/edit_longname_pais"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:id="@+id/edit_callingcode_pais"
+        />
+
+    <CheckBox
+        android:text="Visitado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/edit_visitado" />
+
+    <TextView
+        android:text="Data: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_visitado"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:id="@+id/text_data" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:layout_below="@id/edit_visitado"
+        android:layout_toRightOf="@id/text_data"
+        android:ems="10"
+        android:id="@+id/edit_data_visitada" />
+
+    <Button
+        android:text="Salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/edit_button_salvar"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <Button
+        android:text="Editar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/edit_button_salvar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/edit_button_editar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="#FFD740"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/edit_data_visitada"
+        android:id="@+id/edit_field_shortname"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@id/edit_data_visitada"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:id="@+id/edit_field_callingCode"
+        android:layout_toRightOf="@id/edit_field_shortname"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:layout_below="@id/edit_field_shortname"
+        android:id="@+id/edit_field_longname"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>
